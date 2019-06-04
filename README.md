@@ -51,4 +51,4 @@ For example:
 The general schema for setting environmental variables for where computer will look for 
 the executable is:  *$ export PATH=$PATH:/location/of/executable*
 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](loadimage.gif)
