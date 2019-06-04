@@ -1,7 +1,7 @@
 ## Instructions
 To save your machine to a Docker Image follow these steps. Docker will need to be installed on the machine prior to running these
 examples. Instructions for installing Docker can be found in the prerequisite section at the end of this document. Aim to keep only 
-what is necessary in your image, shoot for 1GB or less. 
+what is necessary in your image, shoot for 1GB or less, and avoid saving any stateful data directly to the image.
 
 **STEP 1**:  Navigate to the root of the server: *$ cd /*
 
@@ -50,3 +50,5 @@ For example:
 * *$ export PATH=$PATH:/var/lib/docker .* 
 The general schema for setting environmental variables for where computer will look for 
 the executable is:  *$ export PATH=$PATH:/location/of/executable*
+
+:whale2:
