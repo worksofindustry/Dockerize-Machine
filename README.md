@@ -10,24 +10,37 @@ be included if you need to make additional configurations to your image while it
 
 **STEP 3**: To build the image run the following, using your specific repo and tags:
 
-* *$ docker build -t your_repo/your_project:your_tag .*
+```bash
+$ docker build -t your_repo/your_project:your_tag .
+```
 
 Do not forget "." period, this tells the docker daemon to run the Dockerfile from the current location. 
 If you run into issues you can manually specify the location of the dockerfile:
 
-* *$ docker build -t my_vm:latest - < /Dockerfile*
+```bash
+$ docker build -t my_vm:latest - < /Dockerfile
+```
 
 **STEP 4**: Save your image or push it to a central repository. 
 
-* To push to a repo: *$ docker push your_repo/your_project:your_tag*.  Note, you'll need to sign into your specific repo if using a remote
-repository. 
+* To push to a repo:
+```bash
+$ docker push your_repo/your_project:your_tag  
+//Note, you'll need to sign into your specific repo if using a remote repository.
+```
 
-* To save *$ docker save <image> > somefile.tar* , or *$ docker save myimage > /media/some/remote/mount/myimage_20190603.tar*
+* To save to tar:
+```bash
+$ docker save <image> > somefile.tar
+or
+$ docker save myimage > /media/some/remote/mount/myimage_20190603.tar
+```
 
 **STEP 5**: To get the image back into another VM for building run either:
-
-* *$ docker pull my/repo:mytag* When making use of a repository
-* *$ docker load < myimage.tar* When making use of image saved to tar. 
+```bash
+$ docker pull my/repo:mytag   --To making use of a repository
+$ docker load < myimage.tar   --To making use of image saved to tar. 
+```
 
 
 ## Contents
@@ -40,10 +53,12 @@ is killed should live inside a stateful data set like a persistent volume.
 Note avoid installing docker with snap, current known bug which can prevent building from the root directory. https://docs.docker.com/install/
 
 To install run the following commands:
-* *$ sudo apt-get update*
-* *$ sudo apt install docker.io*
-* *$ sudo systemctl start docker*
-* *$ sudo systemctl enable docker*  This allows docker to start on reboots
+```bash
+$ sudo apt-get update*
+$ sudo apt install docker.io*
+$ sudo systemctl start docker*
+$ sudo systemctl enable docker*  This allows docker to start on reboots
+```
 
 To run docker as non-root user add the docker executable to the environmental file path location. 
 For example: 
