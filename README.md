@@ -37,7 +37,7 @@ repository.
 is killed should live inside a stateful data set like a persistent volume. 
 
 ## Prerequisites
-Note avoid installing docker with snap, current known bug which can prevent building from the root directory.
+Note avoid installing docker with snap, current known bug which can prevent building from the root directory. https://docs.docker.com/install/
 
 To install run the following commands:
 * *$ sudo apt-get update*
