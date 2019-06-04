@@ -48,7 +48,7 @@ To install run the following commands:
 To run docker as non-root user add the docker executable to the environmental file path location. 
 For example: 
 * *$ export PATH=$PATH:/var/lib/docker .* 
-The general schema for setting environmental variables for where computer will look for 
+The general schema for setting environmental variables for where the computer will look for 
 the executable is:  *$ export PATH=$PATH:/location/of/executable*
 
 ![Alt Text](loadimage.gif)
