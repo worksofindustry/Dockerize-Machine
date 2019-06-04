@@ -54,10 +54,10 @@ Note avoid installing docker with snap, current known bug which can prevent buil
 
 To install run the following commands:
 ```bash
-$ sudo apt-get update*
-$ sudo apt install docker.io*
-$ sudo systemctl start docker*
-$ sudo systemctl enable docker*  This allows docker to start on reboots
+$ sudo apt-get update
+$ sudo apt install docker.io
+$ sudo systemctl start docker
+$ sudo systemctl enable docker  --this will allow docker to start should the machine get rebooted.
 ```
 
 To run docker as non-root user add the docker executable to the environmental file path location. 
