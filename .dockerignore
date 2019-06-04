@@ -1,0 +1,35 @@
+# Remove folders mentioned here:
+# https://wiki.archlinux.org/index.php/Rsync#As_a_backup_utility
+/dev 
+/proc
+/sys
+/tmp
+/run
+/mnt
+/media
+/lost+found
+/var/log
+
+# Remove user folder data
+/home/admin/downloads
+
+# Remove useless heavy files like /var/lib/scrapyd/reports.old
+**/*.old
+**/*.log
+**/*.bak
+**/*.tar
+*.tar
+*.tgz
+*.gz
+
+# Remove docker
+/var/lib/lxcfs
+/var/lib/docker
+/etc/docker
+/root/.docker
+/etc/init/docker.conf
+
+
+# Remove the current program
+/.dockerignore
+/Dockerfile
