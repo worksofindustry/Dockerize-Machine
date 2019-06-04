@@ -31,7 +31,7 @@ $ docker push your_repo/your_project:your_tag
 
 * To save to tar:
 ```bash
-$ docker save <image> > somefile.tar
+$ docker save myimage > somefile.tar
 or
 $ docker save myimage > /media/some/remote/mount/myimage_20190603.tar
 ```
